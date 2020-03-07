@@ -1,7 +1,7 @@
 <template>
   <div>
-    <van-button type="primary" class="test">hello</van-button>
-    <van-icon class="iconfont" class-prefix='icon' name='shuaxin' size="2em" />
+    <van-nav-bar title="饮食推荐"/>
+    
     <Tabbar/>
   </div>
 </template>
@@ -9,14 +9,11 @@
 <script>
 import Tabbar from '../components/Tabbar'
 export default {
-  name: 'Home',
+  name: 'Customfood',
   components: {
   Tabbar
   }
 }
 </script>
 <style lang="scss" scoped>
-  .test{
-    font-size:30px;
-    }
 </style>
