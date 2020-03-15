@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 <script>
-export default {
-  
-}
+export default {};
 </script>
 <style lang="scss">
+$MainColor: #00d8a0 !global;
+.main {
+  margin-top: 45px;
+}
 </style>

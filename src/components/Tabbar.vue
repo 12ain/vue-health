@@ -70,7 +70,7 @@ export default {
 .iconfont-active {
   color: #00d8a0;
 }
-.tab{
-  padding-bottom: 100px;
+.tab {
+  margin-top: 60px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <van-nav-bar title="添加体重" />
-    <div class="content">
+    <van-nav-bar title="添加体重" fixed />
+    <div class="content main">
       <div class="content-top">
         <van-button class="van-button active" type="pirmary">7天</van-button>
         <van-button class="van-button" type="pirmary">30天</van-button>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="首页" />
+    <van-nav-bar title="今日记录" fixed />
     <div class="main">
       <div class="content">
         <div class="content-top">
@@ -20,7 +20,8 @@
         <div>
           <div class="uni-flex-item">
             计划完成度
-            <big>{{data}}%</big>
+            <van-progress :percentage="90" color="#00d8a0" />
+            <!-- <big>{{data}}%</big> -->
           </div>
         </div>
         <div class="uni-padding-wrap uni-common-mt">
@@ -29,7 +30,7 @@
             <div class="uni-flex-item uni-column">
               <div class="uni-table">
                 早餐
-                <text>\n建议摄入{{data}}大卡</text>
+                <div>建议摄入{{data}}大卡</div>
                 <button type="primary" class="btn">+</button>
               </div>
               <div class="uni-ul">
@@ -42,8 +43,8 @@
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
                     p-id="3323"
-                    width="200"
-                    height="200"
+                    width="25"
+                    height="25"
                   >
                     <path
                       d="M468.9 497.8V76.6l258.3 277.8-258.3 143.4z m0-421.2L252.4 360.2l216.5 137.6V76.6z m0 0M116.6 535.1L18.8 661.9l447 284V757.7L116.6 535.1z m351 220.8v188.2l539-288.9-122.3-130.4-416.7 231.1z m0 0"
@@ -69,7 +70,7 @@
             <div class="uni-flex-item uni-column">
               <div class="uni-table">
                 运动
-                <text>\n建议消耗{{data}}大卡</text>
+                <div>建议消耗{{data}}大卡</div>
                 <button type="primary" class="btn">+</button>
               </div>
               <div class="uni-ul">
@@ -98,12 +99,15 @@ export default {
     return {
       num: "123",
       data: "2",
-      text: "hello"
+      span: "hello"
     };
   }
 };
 </script>
 <style lang="scss" scoped>
+.main {
+  padding: 0 10px;
+}
 .content-top {
   display: flex;
   text-align: center;
@@ -111,10 +115,11 @@ export default {
   padding: 35px;
   justify-content: space-around;
   .content-top-item {
-    font-size: 30upx;
+    font-size: 15px;
     .content-top-item-font {
       color: #00d8a0;
-      font-size: 30upx;
+      font-size: 15px;
+      margin: 15px 0;
     }
   }
 }
@@ -123,7 +128,6 @@ export default {
 }
 .uni-common-mt .uni-common-mt .uni-column {
   // display: flex;
-  border: solid 1px;
   padding: 15px 15px 0px 15px;
   border-radius: 10px;
   border: 3px solid #fff;
