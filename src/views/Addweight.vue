@@ -3,9 +3,9 @@
     <van-nav-bar title="添加体重" fixed />
     <div class="content main">
       <div class="content-top">
-        <van-button class="van-button active" type="pirmary">7天</van-button>
-        <van-button class="van-button" type="pirmary">30天</van-button>
-        <van-button class="van-button" type="pirmary">全部</van-button>
+        <van-button class="van-button active" type="primary">7天</van-button>
+        <van-button class="van-button" type="primary">30天</van-button>
+        <van-button class="van-button" type="primary">全部</van-button>
       </div>
       <div class="content-pic"></div>
       <div class="content-tab">

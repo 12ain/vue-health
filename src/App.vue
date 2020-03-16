@@ -10,5 +10,9 @@ export default {};
 $MainColor: #00d8a0 !global;
 .main {
   margin-top: 45px;
+  // margin: 10px;
+}
+.van-nav-bar{
+  // background-color: $MainColor;
 }
 </style>

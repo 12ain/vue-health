@@ -18,7 +18,6 @@
           <div class="info-title">我的BMI</div>
           <div class="info-value">
             <span>20.3</span>
-            <span>kg</span>
           </div>
         </div>
         <div class="info-img">
@@ -93,8 +92,9 @@ export default {
       font-size: 20px;
     }
     .info-value {
-      line-height: 80px;
+      line-height: 50px;
       font-size: 20px;
+      text-align: center;
     }
   }
 }
