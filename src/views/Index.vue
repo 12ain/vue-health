@@ -21,7 +21,6 @@
           <div class="uni-flex-item">
             计划完成度
             <van-progress :percentage="90" color="#00d8a0" />
-            <!-- <big>{{data}}%</big> -->
           </div>
         </div>
         <div class="uni-padding-wrap uni-common-mt">
