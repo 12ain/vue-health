@@ -1,4 +1,4 @@
-# :new:vue-health项目开发文档
+# :new:vue-health项目开发文档(合作项目，已废弃)
 谷歌健康项目 （基于vue-cli4的智能移动健康项目）
 
 *技术栈采用 vue全家桶+axios+vant*
